@@ -1,0 +1,27 @@
+{
+  "name": "ttl-database_models",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive --ui bdd tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheToddlerLackey/Database-Models.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheToddlerLackey/Database-Models/issues"
+  },
+  "homepage": "https://github.com/TheToddlerLackey/Database-Models#readme",
+  "dependencies": {
+    "mongoose": "^5.0.0-rc1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^4.1.0"
+  }
+}
