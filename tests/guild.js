@@ -25,7 +25,13 @@ describe('ModelGuild', () => {
             promiseLibrary: Promise
         });
 
-        done();
+        mongoose.connection.once('open', () => {
+            done();
+        });
+
+        mongoose.connection.on('error', (error) => {
+            done(error);
+        })
     });
 
     it('Should set the default values', async () => {
